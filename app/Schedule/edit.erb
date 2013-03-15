@@ -1,0 +1,51 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Edit <%= @schedule.user_id %></h1>
+    <a href="<%= url_for :action => :show, :id => @schedule.object %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @schedule.object %>" class="ui-btn-right" data-icon="delete" data-direction="reverse">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @schedule.object %>"/>
+      
+          <div data-role="fieldcontain">
+            <label for="schedule[user_id]" class="fieldLabel">User</label>
+            <input type="text" id="schedule[user_id]" name="schedule[user_id]" value="<%= @schedule.user_id %>" <%= placeholder( "User" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="schedule[company_id]" class="fieldLabel">Company</label>
+            <input type="text" id="schedule[company_id]" name="schedule[company_id]" value="<%= @schedule.company_id %>" <%= placeholder( "Company" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="schedule[interviewee_id]" class="fieldLabel">Interviewee</label>
+            <input type="text" id="schedule[interviewee_id]" name="schedule[interviewee_id]" value="<%= @schedule.interviewee_id %>" <%= placeholder( "Interviewee" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="schedule[remark]" class="fieldLabel">Remark</label>
+            <input type="text" id="schedule[remark]" name="schedule[remark]" value="<%= @schedule.remark %>" <%= placeholder( "Remark" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="schedule[schedule_time]" class="fieldLabel">Schedule time</label>
+            <input type="text" id="schedule[schedule_time]" name="schedule[schedule_time]" value="<%= @schedule.schedule_time %>" <%= placeholder( "Schedule time" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="schedule[status]" class="fieldLabel">Status</label>
+            <input type="text" id="schedule[status]" name="schedule[status]" value="<%= @schedule.status %>" <%= placeholder( "Status" ) %> />
+          </div>
+      
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

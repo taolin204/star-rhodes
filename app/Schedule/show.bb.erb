@@ -1,0 +1,45 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @schedule.user_id %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @schedule.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">UserId</td>
+        <td class="itemValue"><%= @schedule.user_id%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">CompanyId</td>
+        <td class="itemValue"><%= @schedule.company_id%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">IntervieweeId</td>
+        <td class="itemValue"><%= @schedule.interviewee_id%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Remark</td>
+        <td class="itemValue"><%= @schedule.remark%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">ScheduleTime</td>
+        <td class="itemValue"><%= @schedule.schedule_time%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Status</td>
+        <td class="itemValue"><%= @schedule.status%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>
