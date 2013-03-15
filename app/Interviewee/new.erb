@@ -1,0 +1,125 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>New <%= @interviewee.title %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :create %>">
+      <input type="hidden" name="id" value="<%= @interviewee.object %>"/>
+
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[address]" class="fieldLabel">Address</label>
+            <input type="text" id="interviewee[address]" name="interviewee[address]" <%= placeholder("Address") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[first_name]" class="fieldLabel">First name</label>
+            <input type="text" id="interviewee[first_name]" name="interviewee[first_name]" <%= placeholder("First name") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[last_name]" class="fieldLabel">Last name</label>
+            <input type="text" id="interviewee[last_name]" name="interviewee[last_name]" <%= placeholder("Last name") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[nationality]" class="fieldLabel">Nationality</label>
+            <input type="text" id="interviewee[nationality]" name="interviewee[nationality]" <%= placeholder("Nationality") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[postal_code]" class="fieldLabel">Postal code</label>
+            <input type="text" id="interviewee[postal_code]" name="interviewee[postal_code]" <%= placeholder("Postal code") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[gender]" class="fieldLabel">Gender</label>
+            <input type="text" id="interviewee[gender]" name="interviewee[gender]" <%= placeholder("Gender") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[race]" class="fieldLabel">Race</label>
+            <input type="text" id="interviewee[race]" name="interviewee[race]" <%= placeholder("Race") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[mobile]" class="fieldLabel">Mobile</label>
+            <input type="text" id="interviewee[mobile]" name="interviewee[mobile]" <%= placeholder("Mobile") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[telephone]" class="fieldLabel">Telephone</label>
+            <input type="text" id="interviewee[telephone]" name="interviewee[telephone]" <%= placeholder("Telephone") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[religion]" class="fieldLabel">Religion</label>
+            <input type="text" id="interviewee[religion]" name="interviewee[religion]" <%= placeholder("Religion") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[email]" class="fieldLabel">Email</label>
+            <input type="text" id="interviewee[email]" name="interviewee[email]" <%= placeholder("Email") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[dob]" class="fieldLabel">Dob</label>
+            <input type="text" id="interviewee[dob]" name="interviewee[dob]" <%= placeholder("Dob") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[specialization]" class="fieldLabel">Specialization</label>
+            <input type="text" id="interviewee[specialization]" name="interviewee[specialization]" <%= placeholder("Specialization") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[prefer_industry]" class="fieldLabel">Prefer industry</label>
+            <input type="text" id="interviewee[prefer_industry]" name="interviewee[prefer_industry]" <%= placeholder("Prefer industry") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[country]" class="fieldLabel">Country</label>
+            <input type="text" id="interviewee[country]" name="interviewee[country]" <%= placeholder("Country") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[state]" class="fieldLabel">State</label>
+            <input type="text" id="interviewee[state]" name="interviewee[state]" <%= placeholder("State") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[willing_travel]" class="fieldLabel">Willing travel</label>
+            <input type="text" id="interviewee[willing_travel]" name="interviewee[willing_travel]" <%= placeholder("Willing travel") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[willing_relocate]" class="fieldLabel">Willing relocate</label>
+            <input type="text" id="interviewee[willing_relocate]" name="interviewee[willing_relocate]" <%= placeholder("Willing relocate") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[job_nature]" class="fieldLabel">Job nature</label>
+            <input type="text" id="interviewee[job_nature]" name="interviewee[job_nature]" <%= placeholder("Job nature") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[language]" class="fieldLabel">Language</label>
+            <input type="text" id="interviewee[language]" name="interviewee[language]" <%= placeholder("Language") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="interviewee[remark]" class="fieldLabel">Remark</label>
+            <input type="text" id="interviewee[remark]" name="interviewee[remark]" <%= placeholder("Remark") %> />
+          </div>
+      
+
+      <input type="submit" value="Create"/>
+    </form>
+  </div>
+
+</div>

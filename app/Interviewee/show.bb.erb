@@ -1,0 +1,120 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @interviewee.address %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @interviewee.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">Address</td>
+        <td class="itemValue"><%= @interviewee.address%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">FirstName</td>
+        <td class="itemValue"><%= @interviewee.first_name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">LastName</td>
+        <td class="itemValue"><%= @interviewee.last_name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Nationality</td>
+        <td class="itemValue"><%= @interviewee.nationality%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">PostalCode</td>
+        <td class="itemValue"><%= @interviewee.postal_code%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Gender</td>
+        <td class="itemValue"><%= @interviewee.gender%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Race</td>
+        <td class="itemValue"><%= @interviewee.race%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Mobile</td>
+        <td class="itemValue"><%= @interviewee.mobile%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Telephone</td>
+        <td class="itemValue"><%= @interviewee.telephone%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Religion</td>
+        <td class="itemValue"><%= @interviewee.religion%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Email</td>
+        <td class="itemValue"><%= @interviewee.email%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Dob</td>
+        <td class="itemValue"><%= @interviewee.dob%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Specialization</td>
+        <td class="itemValue"><%= @interviewee.specialization%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">PreferIndustry</td>
+        <td class="itemValue"><%= @interviewee.prefer_industry%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Country</td>
+        <td class="itemValue"><%= @interviewee.country%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">State</td>
+        <td class="itemValue"><%= @interviewee.state%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">WillingTravel</td>
+        <td class="itemValue"><%= @interviewee.willing_travel%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">WillingRelocate</td>
+        <td class="itemValue"><%= @interviewee.willing_relocate%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">JobNature</td>
+        <td class="itemValue"><%= @interviewee.job_nature%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Language</td>
+        <td class="itemValue"><%= @interviewee.language%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Remark</td>
+        <td class="itemValue"><%= @interviewee.remark%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>

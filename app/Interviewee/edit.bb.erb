@@ -1,0 +1,124 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :show, :id => @interviewee.object %>
+    <h1>Edit <%= @interviewee.address%></h1>
+    <%= link_to "Delete", :action => :delete, :id => @interviewee.object %>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @interviewee.object %>"/>
+      <table>
+          
+          <tr>
+              <td class="itemLabel">Address: </td>
+              <td class="itemValue"><input type="text" name="interviewee[address]" value="<%= @interviewee.address %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">First name: </td>
+              <td class="itemValue"><input type="text" name="interviewee[first_name]" value="<%= @interviewee.first_name %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Last name: </td>
+              <td class="itemValue"><input type="text" name="interviewee[last_name]" value="<%= @interviewee.last_name %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Nationality: </td>
+              <td class="itemValue"><input type="text" name="interviewee[nationality]" value="<%= @interviewee.nationality %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Postal code: </td>
+              <td class="itemValue"><input type="text" name="interviewee[postal_code]" value="<%= @interviewee.postal_code %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Gender: </td>
+              <td class="itemValue"><input type="text" name="interviewee[gender]" value="<%= @interviewee.gender %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Race: </td>
+              <td class="itemValue"><input type="text" name="interviewee[race]" value="<%= @interviewee.race %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Mobile: </td>
+              <td class="itemValue"><input type="text" name="interviewee[mobile]" value="<%= @interviewee.mobile %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Telephone: </td>
+              <td class="itemValue"><input type="text" name="interviewee[telephone]" value="<%= @interviewee.telephone %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Religion: </td>
+              <td class="itemValue"><input type="text" name="interviewee[religion]" value="<%= @interviewee.religion %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Email: </td>
+              <td class="itemValue"><input type="text" name="interviewee[email]" value="<%= @interviewee.email %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Dob: </td>
+              <td class="itemValue"><input type="text" name="interviewee[dob]" value="<%= @interviewee.dob %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Specialization: </td>
+              <td class="itemValue"><input type="text" name="interviewee[specialization]" value="<%= @interviewee.specialization %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Prefer industry: </td>
+              <td class="itemValue"><input type="text" name="interviewee[prefer_industry]" value="<%= @interviewee.prefer_industry %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Country: </td>
+              <td class="itemValue"><input type="text" name="interviewee[country]" value="<%= @interviewee.country %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">State: </td>
+              <td class="itemValue"><input type="text" name="interviewee[state]" value="<%= @interviewee.state %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Willing travel: </td>
+              <td class="itemValue"><input type="text" name="interviewee[willing_travel]" value="<%= @interviewee.willing_travel %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Willing relocate: </td>
+              <td class="itemValue"><input type="text" name="interviewee[willing_relocate]" value="<%= @interviewee.willing_relocate %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Job nature: </td>
+              <td class="itemValue"><input type="text" name="interviewee[job_nature]" value="<%= @interviewee.job_nature %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Language: </td>
+              <td class="itemValue"><input type="text" name="interviewee[language]" value="<%= @interviewee.language %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Remark: </td>
+              <td class="itemValue"><input type="text" name="interviewee[remark]" value="<%= @interviewee.remark %>"/></td>
+          </tr>
+          
+      </table>
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

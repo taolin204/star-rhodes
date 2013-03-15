@@ -1,0 +1,123 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1>New Interviewee</h1>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :create %>">
+      <input type="hidden" name="id" value="<%= @interviewee.object %>"/>
+      <table>
+          
+            <tr>
+                <td class="itemLabel">Address: </td>
+                <td class="itemValue"><input type="text" name="interviewee[address]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">First name: </td>
+                <td class="itemValue"><input type="text" name="interviewee[first_name]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Last name: </td>
+                <td class="itemValue"><input type="text" name="interviewee[last_name]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Nationality: </td>
+                <td class="itemValue"><input type="text" name="interviewee[nationality]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Postal code: </td>
+                <td class="itemValue"><input type="text" name="interviewee[postal_code]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Gender: </td>
+                <td class="itemValue"><input type="text" name="interviewee[gender]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Race: </td>
+                <td class="itemValue"><input type="text" name="interviewee[race]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Mobile: </td>
+                <td class="itemValue"><input type="text" name="interviewee[mobile]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Telephone: </td>
+                <td class="itemValue"><input type="text" name="interviewee[telephone]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Religion: </td>
+                <td class="itemValue"><input type="text" name="interviewee[religion]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Email: </td>
+                <td class="itemValue"><input type="text" name="interviewee[email]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Dob: </td>
+                <td class="itemValue"><input type="text" name="interviewee[dob]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Specialization: </td>
+                <td class="itemValue"><input type="text" name="interviewee[specialization]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Prefer industry: </td>
+                <td class="itemValue"><input type="text" name="interviewee[prefer_industry]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Country: </td>
+                <td class="itemValue"><input type="text" name="interviewee[country]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">State: </td>
+                <td class="itemValue"><input type="text" name="interviewee[state]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Willing travel: </td>
+                <td class="itemValue"><input type="text" name="interviewee[willing_travel]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Willing relocate: </td>
+                <td class="itemValue"><input type="text" name="interviewee[willing_relocate]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Job nature: </td>
+                <td class="itemValue"><input type="text" name="interviewee[job_nature]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Language: </td>
+                <td class="itemValue"><input type="text" name="interviewee[language]"/></td>
+            </tr>
+          
+            <tr>
+                <td class="itemLabel">Remark: </td>
+                <td class="itemValue"><input type="text" name="interviewee[remark]"/></td>
+            </tr>
+          
+      </table>
+      <input type="submit" value="Create"/>
+    </form>
+  </div>
+
+</div>

@@ -1,0 +1,124 @@
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1><%= @interviewee.address %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+      Back
+    </a>
+    <a href="<%= url_for :action => :edit, :id => @interviewee.object %>" class="ui-btn-right" data-icon="star">
+      Edit
+    </a>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      
+          <li>
+            <div class="itemLabel">Address</div>
+            <div class="itemValue"><%= @interviewee.address %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">FirstName</div>
+            <div class="itemValue"><%= @interviewee.first_name %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">LastName</div>
+            <div class="itemValue"><%= @interviewee.last_name %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Nationality</div>
+            <div class="itemValue"><%= @interviewee.nationality %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">PostalCode</div>
+            <div class="itemValue"><%= @interviewee.postal_code %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Gender</div>
+            <div class="itemValue"><%= @interviewee.gender %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Race</div>
+            <div class="itemValue"><%= @interviewee.race %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Mobile</div>
+            <div class="itemValue"><%= @interviewee.mobile %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Telephone</div>
+            <div class="itemValue"><%= @interviewee.telephone %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Religion</div>
+            <div class="itemValue"><%= @interviewee.religion %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Email</div>
+            <div class="itemValue"><%= @interviewee.email %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Dob</div>
+            <div class="itemValue"><%= @interviewee.dob %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Specialization</div>
+            <div class="itemValue"><%= @interviewee.specialization %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">PreferIndustry</div>
+            <div class="itemValue"><%= @interviewee.prefer_industry %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Country</div>
+            <div class="itemValue"><%= @interviewee.country %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">State</div>
+            <div class="itemValue"><%= @interviewee.state %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">WillingTravel</div>
+            <div class="itemValue"><%= @interviewee.willing_travel %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">WillingRelocate</div>
+            <div class="itemValue"><%= @interviewee.willing_relocate %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">JobNature</div>
+            <div class="itemValue"><%= @interviewee.job_nature %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Language</div>
+            <div class="itemValue"><%= @interviewee.language %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Remark</div>
+            <div class="itemValue"><%= @interviewee.remark %></div>
+          </li>
+      
+    </ul>
+  </div>
+
+</div>
